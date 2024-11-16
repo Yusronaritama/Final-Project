@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>RedDoorz Karawang</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #fff;
+        color: #333;
+      }
+      header {
+        position: relative;
+        background-color: #c62828;
+        color: white;
+        text-align: center;
+        padding: 0;
+      }
+      header img {
+        width: 100%;
+        max-height: 300px;
+        object-fit: cover;
+      }
+      header .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.4);
+        color: white;
+      }
+      header h1 {
+        font-size: 3rem;
+        margin: 0;
+      }
+      header p {
+        font-size: 1.5rem;
+        margin: 0;
+      }
+      nav {
+        background-color: #b71c1c;
+      }
+      nav a {
+        color: white;
+      }
+      .container {
+        padding: 20px;
+      }
+      h2,
+      h5 {
+        color: #c62828;
+      }
+      .card-title {
+        color: #b71c1c;
+      }
+      footer {
+        background-color: #b71c1c;
+        color: white;
+        padding: 10px 0;
+      }
+      .facilities ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      .facilities li {
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+      }
+      .facilities i {
+        font-size: 2rem;
+        color: #c62828;
+        margin-right: 15px;
+      }
+      .facilities img {
+        width: 30px;
+        margin-right: 15px;
+      }
+      .map-container {
+        text-align: center;
+        padding: 20px;
+      }
+      .map-container iframe {
+        border: 0;
+        width: 100%;
+        height: 450px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="images/head.jpeg" alt="RedDoorz Karawang" />
+      <div class="overlay">
+        <div>
+          <h1>RedDoorz Karawang</h1>
+          <p>Affordable Stay, Strategic Location</p>
+        </div>
+      </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">RedDoorz</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#overview">Overview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#rooms">Rooms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#facilities">Facilities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reviews">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="overview" class="py-5 text-center">
+      <div class="container">
+        <h2>Welcome to RedDoorz Karawang</h2>
+        <p>
+          Located in the heart of Karawang, RedDoorz offers budget-friendly
+          rooms with modern facilities. Whether you're traveling for business or
+          leisure, we ensure a comfortable stay.
+        </p>
+      </div>
+    </section>
+
+    <section id="rooms" class="py-5 text-center">
+      <div class="container">
+        <h2>Our Rooms</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card mb-4">
+              <img
+                src="images/single.jpg"
+                class="card-img-top"
+                alt="Single Room"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Single Room</h5>
+                <p class="card-text">
+                  Perfect for solo travelers, offering modern amenities at an
+                  affordable price. Free Wi-Fi and breakfast included.
+                </p>
+                <button
+                  class="btn btn-danger"
+                  data-toggle="modal"
+                  data-target="#bookingModal"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-4">
+              <img
+                src="images/dobel.jpg"
+                class="card-img-top"
+                alt="Double Room"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Double Room</h5>
+                <p class="card-text">
+                  Spacious room suitable for two guests. Enjoy a comfortable
+                  stay with all the basic facilities and free Wi-Fi.
+                </p>
+                <button
+                  class="btn btn-danger"
+                  data-toggle="modal"
+                  data-target="#bookingModal"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="facilities" class="facilities text-center">
+      <div class="container">
+        <h2>Our Facilities</h2>
+        <ul class="list-unstyled">
+          <li>
+            <i class="fas fa-wifi"></i>
+            <strong>Free Wi-Fi</strong> throughout the hotel
+          </li>
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <strong>Strategic Location</strong>, close to business districts and
+            malls
+          </li>
+          <li>
+            <i class="fas fa-dollar-sign"></i>
+            <strong>Affordable Prices</strong> with comfortable amenities
+          </li>
+          <li>
+            <i class="fas fa-utensils"></i>
+            <strong>Restaurant</strong> with various menu options
+          </li>
+          <li>
+            <i class="fas fa-car"></i>
+            <strong>Free Parking</strong> available for guests
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="reviews" class="py-5 text-center">
+      <div class="container">
+        <h2>Customer Reviews</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="card-title">Galih Ramadhan</h5>
+                <p class="card-text">
+                  "Untuk perjalanan sendirian, kamarnya cukup nyaman, pemiliknya
+                  ramah dan sangat welcome."
+                </p>
+                <p class="text-muted">Rating: ⭐⭐⭐⭐⭐</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="card-title">Wisma fisio</h5>
+                <p class="card-text">
+                  "Datang dan tanya tersedia atau tidaknya kamar, baru bayar."
+                </p>
+                <p class="text-muted">Rating: ⭐⭐⭐⭐</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="card-title">Rahmat Hadi Priyono</h5>
+                <p class="card-text">"Bagus."</p>
+                <p class="text-muted">Rating: ⭐⭐⭐⭐⭐</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="location" class="map-container">
+      <h2>Our Location</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126396.0418992347!2d107.2548856187976!3d-6.3178177532748795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e5a17a4bd973%3A0x67c10a53df0634d3!2sRedDoorz%20Near%20Karawang%20International%20Industrial%20City!5e0!3m2!1sen!2sid!4v1632401242024!5m2!1sen!2sid"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </section>
+
+    <section id="contact" class="py-5 text-center">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>
+          If you have any questions or need assistance, feel free to reach out
+          to us!
+        </p>
+        <div>
+          <p><strong>Email:</strong> info@reddoorzkarawang.com</p>
+          <p><strong>Phone:</strong> +62 812-3456-7890</p>
+          <p>
+            <strong>Address:</strong> Jl. Contoh No. 123, Karawang, Indonesia
+          </p>
+        </div>
+        <button
+          class="btn btn-danger"
+          data-toggle="modal"
+          data-target="#bookingModal"
+        >
+          Book Now
+        </button>
+      </div>
+    </section>
+
+    <footer class="text-center">
+      <p>&copy; 2024 RedDoorz Karawang. All rights reserved.</p>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div
+      class="modal fade"
+      id="bookingModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="bookingModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="bookingModalLabel">Booking Form</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phone"
+                  placeholder="Enter your phone number"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="checkin">Check-in Date</label>
+                <input type="date" class="form-control" id="checkin" required />
+              </div>
+              <div class="form-group">
+                <label for="checkout">Check-out Date</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="checkout"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="roomType">Room Type</label>
+                <select class="form-control" id="roomType" required>
+                  <option value="">Choose...</option>
+                  <option value="single">Single Room</option>
+                  <option value="double">Double Room</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-danger">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
